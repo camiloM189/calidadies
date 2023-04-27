@@ -1,0 +1,194 @@
+.login-center{
+    min-height:100vh
+
+
+}
+.text-register{
+    margin-left: 70px;
+
+
+}
+.input-text{
+    height: 3.4375em;
+    width: 100%;
+}
+.botton-login{
+    padding: 5px 100px 5px 100px;
+
+}
+.register-page{
+    /* margin: 20px 120px 20px 20px; */
+    margin: 20px 0px 0px 40px;
+}
+.contenedor2{
+    width: 560px;
+    height: 50px;
+    border-radius: 40px;
+}
+.contenedor2:hover{
+    color: white;
+    background-color: rgb(1, 30, 72)
+}
+.window{
+    height: 100%;
+    width: 26%;
+    position: absolute;
+
+
+}
+.cuadrado{
+    height: 100%;
+    width: 87%;
+    position: absolute;
+    margin-left: 13%;
+}
+.modal-list{
+    width: 74%;
+    height: 100%;
+    position: absolute;
+    margin-left: 26%;
+}
+.agregar{
+
+    width: 65px;
+    margin-top: 3%
+
+}
+.boton-guardar{
+    margin-top: 50px;
+    bottom: 4%;
+    position: fixed;
+    right: 2%;
+
+}
+.add-list{
+    display: none;
+}
+.list-button{
+    text-decoration: none;
+    color: black;
+   
+}
+.lista-mejoramiento:hover{
+    background-color: rgb(122, 120, 120);
+ 
+}
+.no-plan{
+    width: 74%;
+    height: 100%;
+    background-color: rgb(89, 43, 119);
+    margin-left: 26%;
+    position: absolute;
+
+}
+.center-text{
+    margin-top: 10%;
+}
+.boton-posicion{
+    margin-top: 50px;
+    bottom: 4%;
+    position: fixed;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+   border-radius: 10px;
+}
+.boton-regresar{
+    margin-top: 50px;
+    bottom: 4%;
+    position: fixed;
+    left: 32%;
+}
+.listas-cuadrado{
+    width: 100%;
+    border-radius: 0  !important;
+    position: absolute;
+    height: 8%;
+
+}
+.listas-cuadrado:hover{
+    background-color: rgb(122, 120, 120);
+   
+}
+
+
+
+
+
+
+@media (min-width: 280px) {
+    .contenedor2{
+        width: 225px;
+        height: 80px;
+     
+    }
+}
+@media (min-width: 360px) {
+    .contenedor2{
+        width: 310px;
+        height: 60px;
+     
+    }
+}
+
+@media (min-width: 375px) {
+    .contenedor2{
+        width: 310px;
+        height: 60px;
+     
+    }
+}
+@media (min-width: 412px) {
+    .contenedor2{
+        width: 350px;
+        height: 60px;
+     
+    }
+}
+
+@media (min-width: 576px) {
+    .contenedor2{
+        width: 350px;
+        height: 60px;
+     
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .contenedor2{
+        width: 390px;
+        height: 60px;
+     
+    }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .contenedor2{
+        width: 512px;
+        height: 60px;
+     
+    }
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .contenedor2{
+        width: 700px;
+        height: 50px;
+     
+    }
+   
+   
+   }
+
+
+
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  
+   
+   }
