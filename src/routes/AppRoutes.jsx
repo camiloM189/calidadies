@@ -4,13 +4,15 @@ import { useDispatch, useSelector } from 'react-redux'
 import { HomeRoute } from "../home/routes/HomeRoute"
 import { startCheckAuthToken } from "../store/auth/authThunks"
 import { useEffect } from "react"
+import { HomePageCalidadies } from "../page/HomePageCalidadies"
+import { PagesRoutes } from "../page/routes/PagesRoutes"
 
 
 export const AppRoutes = () => {
 
   // const {status,checkAuthToken} = checkAuth();
     const dispatch = useDispatch();
-    const {status} = useSelector(state => state.auth)
+    const {status,aplication} = useSelector(state => state.auth)
 
   useEffect(() => {
     dispatch(startCheckAuthToken());
@@ -26,19 +28,15 @@ export const AppRoutes = () => {
   
   return (
     <>
-
-
+ 
         <Routes>
             {(status === 'not-authenticated')
-              ? <Route path="/*" element={<AuthRoutes/>}/>
-             :<Route path="/*" element={<HomeRoute/>}/>
-
-            
+              ? <Route path="/auth/login" element={<AuthRoutes/>}/>
+             :<Route path="/homePage" element={<HomeRoute/>}/>
             }
            {/* <Route path="/Denominacion" element={<DenominacionPage/>}/> */}
-     
-
         </Routes>
+
     </>
   )
 }

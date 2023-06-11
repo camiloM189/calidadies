@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 
 export const useForm = ( initialForm = {}, formValidations = {}) => {
-  
-    const [ formState, setFormState ] = useState( initialForm );
+    
+    const [ formState, setFormState ] = useState( initialForm || null)
     const [ formValidation, setFormValidation ] = useState({});
 
     useEffect(() => {
@@ -30,12 +30,14 @@ export const useForm = ( initialForm = {}, formValidations = {}) => {
         const { name, value } = target;
         setFormState({
             ...formState,
-            [ name ]: value
+            [ name ]: value !== undefined ? value : ''
         });
     }
 
     const onResetForm = () => {
+       
         setFormState( initialForm );
+
     }
 
     const createValidators = () => {

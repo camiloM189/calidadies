@@ -1,86 +1,62 @@
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
-import { openList } from "../../store/calidadies/calidadiesSlice";
-import { useEffect } from "react";
-import { startListPlan } from "../../store/calidadies/thunks";
+import { useEffect, useState } from "react";
+import { startGetItemById } from "../../store/actividades/actividadesThunks";
 
 
-export const WindowPage = (isModel) => {
+
+
+export const WindowPage = () => {
   const dispatch = useDispatch()
-  const {plan,active} = useSelector(state => state.plantilla)
+  const {actividades,close} = useSelector(state => state.actividades)
+  const [activeTitle, setActiveTitle] = useState('')
 
 
+
+  const onClick = (_id,title) => {
+      // dispatch(startGetItemById({_id}));
+      setActiveTitle(title)
+  }
   
-  // const listTitle = [title]
-
-
-
-  // const desectructurar = () => {
-  //   if(plan.length > 0){
-  //     const [{list,title,id}] = plan;
-  //     const [{listItem}] = list
-  //     const {titleItem} = listItem
-  //     return{
-  //       list,title,id
-  //     }
-  // }
- 
-  // }
-    // const onClick = () => {
-    //   const {list,title,id} = desectructurar()
-    //   console.log(title,id);
-    //   dispatch(startListPlan({list,title,id}))
-
-    // }
   
-    // dispatch(setActiveNote({title,body,id,date,imageUrls}));
+
 
   return (
     
-    <>
-        <div className='window border border-1 border-bottom-0 border-dark'>
-            <h5 className="ms-3 mt-3">Plan De mejoramiento</h5>
-            <hr />
-         { (isModel)
-         ?
-         <>
-      
-          <Link className='color-black list-button ms-2'>
-      
-          {/* {
-            //intento de mapear active que salio mal xd pd:esto es un recordatorio 
-            //por tu meomoria de mierda
-            //hay otro error aqui de no poder poner los titulos cuando se guarda
-            (active !== null) ?
-          
-            
-           plan?.map(listTitle => (
-            <div>
-            <button className="btn btn-dark mb-2 listas-cuadrado" >{listTitle.title}</button>
-            </div>
-           
-
-           )):
-           <div></div>
+ 
+    <div className='window border border-1 border-bottom-0 border-dark'>
+    <h5 className="ms-3 mt-3">Plan De mejoramiento</h5>
+    <hr />
+    <div className='list-button '>
+      {
+        (close) ? 
+        <ul>
+        {
+          actividades?.map(active => (
+          <li className="mb-4" >
+            <Link to={`/homepage/view/${active._id}`}>
+              <button className="btn btn-dark mb-2 listas-cuadrado"
+               onClick={() => onClick(active._id,active.title)}> 
+               {active.title}
+              </button>
+             </Link>
+          </li>
                 
-          }  */}
-         
-
+          ))
+        }
+    </ul>
+    : <></>
+      }
+    </div>
+  </div>
+    );
+    
       
-          </Link>
      
-          </>
-          :
-          <div></div>
-          }
+         
           
-        </div>
-    
-    
-    
-    
-    
-    
-    </>
-  )
+      
+
+  
+  
 }

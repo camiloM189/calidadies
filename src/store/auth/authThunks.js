@@ -16,7 +16,6 @@ export const starLoginWithEmailAndPassword = ({email,password}) => {
             localStorage.setItem('token',data.token);
             localStorage.setItem('token-init-date',new Date().getTime());
             dispatch(login({name:data.name,uid:data.uid}));
-           
         
 
           

@@ -33,14 +33,17 @@
     height: 100%;
     width: 26%;
     position: absolute;
-
-
 }
 .cuadrado{
     height: 100%;
-    width: 87%;
+    width: 100%;
     position: absolute;
-    margin-left: 13%;
+}
+.cuadrado2{
+    height: 100%;
+    width: 74%;
+    position: absolute;
+    margin-left: 26%;
 }
 .modal-list{
     width: 74%;
@@ -75,9 +78,9 @@
 }
 .no-plan{
     width: 74%;
-    height: 100%;
+    height: 600%;
     background-color: rgb(89, 43, 119);
-    margin-left: 26%;
+    margin-left: 25%;
     position: absolute;
 
 }
@@ -97,23 +100,177 @@
     margin-top: 50px;
     bottom: 4%;
     position: fixed;
-    left: 32%;
+   
 }
+.boton-back{
+    margin-top: 50px;
+    bottom: 3%;
+    position: fixed;
+    left: 30%;
+    width: 70px;
+    height: 42px;
+    border-radius: 11px;
+}
+.boton-back-evento{
+    margin-top: 50px;
+    bottom: 3%;
+    position: fixed;
+    left: 2%;
+    width: 70px;
+    height: 42px;
+    border-radius: 11px;
+}
+
 .listas-cuadrado{
     width: 100%;
     border-radius: 0  !important;
-    position: absolute;
     height: 8%;
-
 }
 .listas-cuadrado:hover{
     background-color: rgb(122, 120, 120);
-   
+}
+.editButton{
+    margin-right:0px;
 }
 
+ul{
+    list-style: none;
+    padding-left: 0rem;
+}
+.botonTitleItem{
+    width: 98%;
+    border: 20px;
+    background-color: #dc3545;
+    color: white;
+    transition-delay: 0.1s;
+}
+.botonTitleItem:hover{
+    background-color: rgb(31, 27, 27);
+    color: white;
+}
+.modalBorrar{
+    bottom: 50%;
+}
+.cuadradoItem{
+    width: 11%; 
+}
+.botonCuadroItem{
+    border: none;
+    outline: none;
+    width: 100%; 
+}
+.windowNotes{
+    /* width: 74%; */
+    background-color: rgb(44, 35, 170);
+    /* margin-left: 26%;
+    position: absolute;
+    height: 300%; */
+    width: 74%;
+    height: 600%;
+    margin-left: 26%;
+    position: absolute;
+}
 
+.botonesAyer{
+    display: flex;
+  justify-content: center;
+}
+.noNote{
+    background-color: #152c50;
+    width: 74%;
+    height: 600%;
+    margin-left: 26%;
+    position: absolute;
+}
+.boton-borrar-item{
+    margin-top: 50px;
+    bottom: 3%;
+    position: fixed;
+    right: 2%;
+    height: 42px;
+    border-radius: 11px;
+    
+}
+.boton-borrar-metas{
+    margin-top: 24px; 
+    position: fixed;
+    right: 2%;
+    height: 43px;
+    border-radius: 11px;
+    top: 10%;
+}
+.subirArchivos{
+    right: -28%;
+    position: relative;
+    top: 240px;
+    width: 20px;
+}
+/* .imgUrl{
+  width: 10rem;
+  right: -28%;
+  position: relative;
+  top: 230px;
+} */
+.listaDeImagenes{
+    width: 10rem;
 
+}
+.setImgUrl{
+    width: 10rem !important;
+    right: -26% !important;
+    position: relative !important;
+    top: 320px !important;
 
+}
+.style{
+    width: 16rem;
+    height: 10rem;
+
+}
+.descargaFile{
+    width:100%;
+}
+.imagenArchivo {
+    /* width: 100px; */
+    /* height: auto; */
+    position: absolute;
+    left: 25%;
+    top: 47%;
+}
+
+.imageItem{
+    max-width: 15%;
+    height: auto;
+}
+.img-fluid{
+    max-width: 80% !important;
+    height: auto !important;
+    margin-bottom: 10%;
+}
+.imagenArchivo{
+    position: absolute;
+    left: 28%;
+    top: 63%;
+}
+.pdf-icon{
+    width: 74%;
+    height: 54%;
+    max-width: 80%;
+    color: #dc3545;
+}
+.editComponent{
+    right: -28%;
+    position: relative;
+    top: 330px;
+    width: 20px;
+}
+.editatMetas{
+    bottom: 82%;
+    position: fixed;
+    right: 2%;
+    height: 42px;
+    border-radius: 11px;
+}
 
 
 @media (min-width: 280px) {

@@ -14,9 +14,13 @@ export const NewPlanPage = ({onNewPlan}) => {
     }
 
   return (
+    <>
+
     <div className='no-plan'>
           <h3 className="text-light text-center center-text">Crea un nuevo plan</h3>
+
           <button className="btn btn-dark boton-posicion" onClick={newPlan}>+</button>
     </div>
+    </>
   )
 }

@@ -11,7 +11,7 @@ export const Nabvar = () => {
   }
 
   return (
-    <div className="navbar navbar-dark bg-dark mb-4 px-4">
+    <div className="navbar navbar-dark bg-dark px-4 nav">
         <span className="navbar-brand">
             {name}
         </span>

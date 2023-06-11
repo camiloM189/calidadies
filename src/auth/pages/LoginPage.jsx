@@ -3,6 +3,7 @@ import { useForm } from '../../hook/useForm'
 import { useDispatch, useSelector } from 'react-redux'
 import { starLoginWithEmailAndPassword } from '../../store/auth/authThunks'
 import Swal from 'sweetalert2'
+import { Link } from 'react-router-dom'
 
 const formData = {
 	email: '',
@@ -58,7 +59,7 @@ export const LoginPage = () => {
 				</div>
             	{/* <a href="/register" >Crear una cuenta</a> */}
 				<button type="submit" className="btn btn-primary botton-login">Login</button>
-				<p className="register-page">No tienes cuenta? <a href="/auth/register">Registrate</a></p>
+				<p className="register-page">No tienes cuenta? <Link to={'/auth/register'}>Registrate</Link> </p>
 			
 			</form>
 		</div>

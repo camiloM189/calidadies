@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux"
 import { useForm } from "../../hook/useForm"
 import { startRegister } from "../../store/auth/authThunks";
+import { Link } from "react-router-dom";
 
 const registeFormFiles = {
   registerName:'',
@@ -55,8 +56,8 @@ export const RegisterPage = () => {
                  />
                </div>
                <button type="submit" className="btn btn-primary botton-login">Register</button>
-               <p className="register-page">Ya tienes cuenta? <a href="/">Inicia Sesion</a></p>
-
+               <p className="register-page">Ya tienes cuenta? <Link to={'/'}>Inicia Sesion</Link></p>
+               
            </form>
        </div>
      </div>

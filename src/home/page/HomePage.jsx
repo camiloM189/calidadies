@@ -1,7 +1,12 @@
+
 import { Link } from "react-router-dom"
 
 
+
 export const HomePage = () => {
+
+
+ 
   return ( 
     <>
 
@@ -18,10 +23,12 @@ export const HomePage = () => {
         Justificación del programa
       </button>
       </Link>
-
+      <Link to='/homepage/Aspectoscurriculares'>
       <button className="mt-3 mb-3 ms-3 me-3 contenedor2 border border-3 border-dark p-1">
         Aspectos curriculares
       </button>
+      </Link>
+
       <button className="mt-3 mb-3 ms-3 me-3 contenedor2 border border-3 border-dark p-1">
         Organización de las actividades académicas y proceso formativo
       </button>

@@ -14,7 +14,7 @@ export const NewListComponent = () => {
     const searchSubmit = (event) => {
       event.preventDefault();
       dispatch(startNewImprovementPlan({addSearch}));
-      console.log(addSearch);
+
       
     }
     const closeModal = () => {
@@ -44,16 +44,7 @@ export const NewListComponent = () => {
                   improvementPlan.map(improvement => (
                     <li>{improvement.addSearch}</li>
                   ))
-                     
-
-                    
-
-                    
-                    
-
-
                 }
-
               </ol>
               <button className="btn btn-danger mt-3 mb-3" type="submit" onClick={closeModal}>Cerrar</button>
 

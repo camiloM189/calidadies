@@ -1,14 +1,14 @@
 import {  configureStore } from '@reduxjs/toolkit'
-import { calidadiesSlice } from './calidadies/calidadiesSlice'
 import { authSlice } from './auth/authSlice'
-import { plantillaSlice } from './prueba/plantillaSlice'
+import { actividadesSlice } from './actividades/actividadesSlice'
+import { notesSlice } from './actividades/notesSlice'
 
 export const store = configureStore({
   reducer: {
-    calidadies:calidadiesSlice.reducer,
     auth:authSlice.reducer,
-    plantilla:plantillaSlice.reducer,
-
+    notes:notesSlice.reducer,
+    actividades:actividadesSlice.reducer,
+    
   },
   
 
